@@ -21,9 +21,9 @@ ViJ;6Mm_9CTe]GZCLk^<ZK0
 !s100 944?Dgbb7M[IdaUP3WNn91
 Z6 OV;C;10.3d;59
 32
-Z7 !s110 1617829504
+Z7 !s110 1618426659
 !i10b 1
-Z8 !s108 1617829504.427000
+Z8 !s108 1618426659.640000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_223_1111.vhd|
 Z10 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_223_1111.vhd|
 !i113 1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Eadder_22_111
-Z13 w1617771761
+Z13 w1618424632
 R1
 R2
 R3
@@ -60,9 +60,9 @@ VBLOV?i_L37`MWhK2[5UVI2
 !s100 R8;jIJ4cNP5_POhgf0Qek0
 R6
 32
-Z16 !s110 1617829502
+Z16 !s110 1618426658
 !i10b 1
-Z17 !s108 1617829502.905000
+Z17 !s108 1618426658.140000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_22_111.vhd|
 Z19 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_22_111.vhd|
 !i113 1
@@ -74,8 +74,8 @@ R2
 DEx4 work 12 adder_22_111 0 22 BLOV?i_L37`MWhK2[5UVI2
 l26
 L12
-VD_BRQ0nEALg=N0j4V1Sl13
-!s100 ZTa25hWj^YHCf?9eMLChj1
+Vd95AY4E;_QO[OVTnlXfD20
+!s100 @Ihek?HEZ^Jf<EhWj[_X92
 R6
 32
 R16
@@ -99,11 +99,11 @@ V2U53onXe4Zla7P`m_?UVj0
 !s100 bhM`8V`jnU8Jc?_]HAGc82
 R6
 32
-Z23 !s110 1617829503
+R16
 !i10b 1
-Z24 !s108 1617829503.663000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_55_1111.vhd|
-Z26 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_55_1111.vhd|
+Z23 !s108 1618426658.890000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_55_1111.vhd|
+Z25 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_55_1111.vhd|
 !i113 1
 R11
 R12
@@ -117,32 +117,32 @@ Vi_Q<=VgLI3BzQ4V8fcm;92
 !s100 Z33mMK7dmlga`RZbJOmU92
 R6
 32
-R23
+R16
 !i10b 1
+R23
 R24
 R25
-R26
 !i113 1
 R11
 R12
 Eadder_7_111
-Z27 w1617799944
+Z26 w1617799944
 R1
 R2
 R3
-Z28 8C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd
-Z29 FC:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd
+Z27 8C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd
+Z28 FC:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd
 l0
 L5
 VcZGj@BWD:l7f6hKj:KSf70
 !s100 XYz2?HR=SAY4`1Q=zK7jD2
 R6
 32
-Z30 !s110 1617829501
+Z29 !s110 1618426656
 !i10b 1
-Z31 !s108 1617829500.979000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd|
-Z33 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd|
+Z30 !s108 1618426656.534000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd|
+Z32 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_7_111.vhd|
 !i113 1
 R11
 R12
@@ -156,30 +156,30 @@ V8L7QAL99d?N=ZJXee`jeC0
 !s100 mE^7PGEHUg=kTKcc^gZh81
 R6
 32
-R30
+R29
 !i10b 1
+R30
 R31
 R32
-R33
 !i113 1
 R11
 R12
 Eadder_8
-Z34 w1617828874
+Z33 w1617828874
 R1
 R2
 R3
-Z35 8C:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd
-Z36 FC:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd
+Z34 8C:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd
+Z35 FC:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd
 l0
 L4
 Vcgmlo2bLQDd<D13CAUWWK0
 !s100 6<9_FM7XH^3[m24dCW]Sj2
 R6
 32
-R16
+Z36 !s110 1618426657
 !i10b 1
-Z37 !s108 1617829502.049000
+Z37 !s108 1618426657.329000
 Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd|
 Z39 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/adder_8.vhd|
 !i113 1
@@ -195,7 +195,7 @@ VMH1jWaGnFKbOSA[5KbXbg1
 !s100 B`F_TdKgzioV@5<8YlG<K3
 R6
 32
-R16
+R36
 !i10b 1
 R37
 R38
@@ -204,34 +204,34 @@ R39
 R11
 R12
 Ecompressor
-Z40 w1617849157
+Z40 w1618426631
 R1
 R2
 R3
-Z41 8C:\VHDL\EEL7123_CAP_8_VHDL\compressor.vhd
-Z42 FC:\VHDL\EEL7123_CAP_8_VHDL\compressor.vhd
+Z41 8C:/VHDL/EEL7123_CAP_8_VHDL/compressor.vhd
+Z42 FC:/VHDL/EEL7123_CAP_8_VHDL/compressor.vhd
 l0
 L4
 Vc3Ge;McWU`I<EiDknI]aP2
 !s100 UNKn`:92JABcA7RL[J=XQ0
 R6
 32
-Z43 !s110 1617849177
+Z43 !s110 1618426660
 !i10b 1
-Z44 !s108 1617849177.346000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\VHDL\EEL7123_CAP_8_VHDL\compressor.vhd|
-Z46 !s107 C:\VHDL\EEL7123_CAP_8_VHDL\compressor.vhd|
+Z44 !s108 1618426660.493000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/compressor.vhd|
+Z46 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/compressor.vhd|
 !i113 1
 R11
 R12
 Astructural
 R1
 R2
-Z47 DEx4 work 10 compressor 0 22 c3Ge;McWU`I<EiDknI]aP2
-l56
+DEx4 work 10 compressor 0 22 c3Ge;McWU`I<EiDknI]aP2
+l65
 L11
-VIF1Hl12@W<mIjHo9Zi:6_1
-!s100 073WNohB9jEIh76CAbcCQ1
+Vn4:^Emf8SY2P0VMYH;Wh03
+!s100 gPNK]:^oInL[WoRJz2d[Q1
 R6
 32
 R43
@@ -243,23 +243,23 @@ R46
 R11
 R12
 Efull_adder
-Z48 w1615318546
+Z47 w1615318546
 R1
 R2
 R3
-Z49 8C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd
-Z50 FC:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd
+Z48 8C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd
+Z49 FC:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd
 l0
 L4
 V8oCkPKzX:AZ8R@C__aaKh2
 !s100 <eg6WPAEM3C2b]g9]_@@[2
 R6
 32
-Z51 !s110 1617829505
+Z50 !s110 1618426661
 !i10b 1
-Z52 !s108 1617829505.336000
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd|
-Z54 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd|
+Z51 !s108 1618426661.283000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd|
+Z53 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/full_adder.vhd|
 !i113 1
 R11
 R12
@@ -273,32 +273,32 @@ V^@CV5mLPi2_RVI1a05D[N3
 !s100 oTAShXSX9`lAb0Zzkgm`Q1
 R6
 32
-R51
+R50
 !i10b 1
+R51
 R52
 R53
-R54
 !i113 1
 R11
 R12
 Ehalf_adder
-Z55 w1617771202
+Z54 w1617771202
 R1
 R2
 R3
-Z56 8C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd
-Z57 FC:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd
+Z55 8C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd
+Z56 FC:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd
 l0
 L4
 Vj=QKQz`Y^ZYRL1=BMzFMG3
 !s100 C5H]]dMd79:kL?GN40]JN0
 R6
 32
-Z58 !s110 1617829506
+Z57 !s110 1618426662
 !i10b 1
-Z59 !s108 1617829506.148000
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd|
-Z61 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd|
+Z58 !s108 1618426662.103000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd|
+Z60 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/half_adder.vhd|
 !i113 1
 R11
 R12
@@ -312,32 +312,32 @@ V5deQRELK1DE]7]b:C2NH@0
 !s100 NIg:;IFhf:MVUlK19lQ]a1
 R6
 32
-R58
+R57
 !i10b 1
+R58
 R59
 R60
-R61
 !i113 1
 R11
 R12
 Einfo_array
-Z62 w1617768595
+Z61 w1617768595
 R1
 R2
 R3
-Z63 8C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd
-Z64 FC:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd
+Z62 8C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd
+Z63 FC:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd
 l0
 L4
 VXKfSi;IH5dkFD[BAnimOj1
 !s100 @XRC@B4dnnG8KU8cfL7HG3
 R6
 32
-R58
+R57
 !i10b 1
-Z65 !s108 1617829506.865000
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd|
-Z67 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd|
+Z64 !s108 1618426662.908000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd|
+Z66 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/info_array.vhd|
 !i113 1
 R11
 R12
@@ -351,50 +351,50 @@ V2a?`Fnh[2H<UcB5[JCbQW3
 !s100 Z[RiIPLG[11o:4TfG6ZV72
 R6
 32
-R58
+R57
 !i10b 1
+R64
 R65
 R66
-R67
 !i113 1
 R11
 R12
 Etop
-Z68 w1617829959
+Z67 w1617829959
 R1
 R2
 R3
-Z69 8C:\VHDL\EEL7123_CAP_8_VHDL\top.vhd
-Z70 FC:\VHDL\EEL7123_CAP_8_VHDL\top.vhd
+Z68 8C:/VHDL/EEL7123_CAP_8_VHDL/top.vhd
+Z69 FC:/VHDL/EEL7123_CAP_8_VHDL/top.vhd
 l0
 L4
 V`TidN<`<Xn@=7iH7I=32l0
 !s100 BYWPOK@54mLRZ^JS8K<^?1
 R6
 32
-Z71 !s110 1617829968
+Z70 !s110 1618426663
 !i10b 1
-Z72 !s108 1617829968.153000
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\VHDL\EEL7123_CAP_8_VHDL\top.vhd|
-Z74 !s107 C:\VHDL\EEL7123_CAP_8_VHDL\top.vhd|
+Z71 !s108 1618426663.710000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/VHDL/EEL7123_CAP_8_VHDL/top.vhd|
+Z73 !s107 C:/VHDL/EEL7123_CAP_8_VHDL/top.vhd|
 !i113 1
 R11
 R12
 Astructural
 R1
 R2
-DEx4 work 3 top 0 22 `TidN<`<Xn@=7iH7I=32l0
+Z74 DEx4 work 3 top 0 22 `TidN<`<Xn@=7iH7I=32l0
 l39
 L11
-V`CHidM9UfzEff0m]3F2G70
-!s100 O6dTm@`nczhUF?_VjhmL;0
+Z75 V`CHidM9UfzEff0m]3F2G70
+Z76 !s100 O6dTm@`nczhUF?_VjhmL;0
 R6
 32
-R71
+R70
 !i10b 1
+R71
 R72
 R73
-R74
 !i113 1
 R11
 R12

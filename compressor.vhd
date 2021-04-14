@@ -10,9 +10,18 @@ end compressor;
 
 architecture Structural of compressor is
 
-  signal v10, v11, v12: std_logic_vector(12 downto 0) := "0000000000000";
-  signal v20, v21, v22: std_logic_vector(12 downto 0) := "0000000000000";
-  signal v30,v31: std_logic_vector(13 downto 0) := "00000000000000";
+  -- signal v10, v11, v12: std_logic_vector(12 downto 0) := "0000000000000";
+  -- signal v20, v21, v22: std_logic_vector(12 downto 0) := "0000000000000";
+  -- signal v30,v31: std_logic_vector(13 downto 0) := "00000000000000";
+
+	-- 4 bit signals
+	signal t1_1, t1_5, t2_2: std_logic_vector(3 downto 0);
+	-- 3 bit signals
+	signal t1_2, t1_3, t1_4, t1_6, t2_3, t3_4: std_logic_vector(2 downto 0);
+	-- 2 bit signals
+	signal t2_1, t2_4, t2_5, t3_1, t3_2, t3_3, t3_5: std_logic_vector(1 downto 0);
+	-- auxiliar signal
+	signal aux, aux0: std_logic;
 
   component full_adder is
     port(
@@ -55,9 +64,12 @@ architecture Structural of compressor is
 
   begin
 
-    v12(11) <= V0(11); -- v12(11) receives d_2
-    v21(12) <= V0(12); -- v21(12) receives d_3
-    v22 <= V7;         -- v22 is equal to V_7
+    --v12(11) <= V0(11); -- v12(11) receives d_2
+    --v21(12) <= V0(12); -- v21(12) receives d_3
+    --v22 <= V7;         -- v22 is equal to V_7
+
+		aux <= V7(5);
+		aux0 <= V0(12);
 
     -- level 1
     U0: adder_55_1111 port map( -- t_1,1
@@ -66,8 +78,7 @@ architecture Structural of compressor is
       in_2 => V2(3 downto 2) ,
       in_3 => V3(3 downto 2) ,
       in_4 => V4(3 downto 2) ,
-      out_0(1 downto 0) => v30(3 downto 2),
-      out_0(3 downto 2) => v10(5 downto 4)
+			out_0 => t1_1							-- checked
     );
     U1: adder_7_111 port map(  -- t_1,2
       in_0 => V0(4) ,
@@ -77,9 +88,7 @@ architecture Structural of compressor is
       in_4 => V4(4) ,
       in_5 => V5(4) ,
       in_6 => V6(4) ,
-      out_0(0) => v11(4) ,
-      out_0(1) => v11(5) ,
-      out_0(2) => v10(6)
+      out_0 => t1_2
     );
     U2: adder_7_111 port map( -- t_1,3
       in_0 => V0(5) ,
@@ -89,9 +98,7 @@ architecture Structural of compressor is
       in_4 => V4(5) ,
       in_5 => V5(5) ,
       in_6 => V6(5) ,
-			out_0(0) => v12(5) ,
-      out_0(1) => v11(6) ,
-      out_0(2) => v10(7)
+			out_0 => t1_3
     );
     U3: adder_7_111 port map( -- t_1,4
       in_0 => V0(6) ,
@@ -101,9 +108,7 @@ architecture Structural of compressor is
       in_4 => V4(6) ,
       in_5 => V5(6) ,
       in_6 => V6(6) ,
-			out_0(0) => v12(6) ,
-      out_0(1) => v11(7) ,
-      out_0(2) => v10(8)
+			out_0 => t1_4
     );
     U4: adder_55_1111 port map( -- t_1,5
       in_0 => V0(8 downto 7) ,
@@ -111,88 +116,91 @@ architecture Structural of compressor is
       in_2 => V2(8 downto 7) ,
       in_3 => V3(8 downto 7) ,
       in_4 => V4(8 downto 7) ,
-      out_0(0) => v11(8) ,
-			out_0(3 downto 1) => v10(11 downto 9)
+      out_0 => t1_5
     );
     U5: adder_22_111 port map(  -- t_1,6
       in_0 => V0(10 downto 9),
       in_1 => V1(10 downto 9),
-      out_0 => v11(11 downto 9)
+      out_0 => t1_6
     );
     -- level 2
     U6: full_adder port map( -- t_2,1
-      A => v10(4), 				-- checked
-      B => v11(4), 				-- checked
-      Cin => '0', 				-- checked
-      S => v30(4), 				-- checked
-      Cout => v20(5) 			-- checked
+      A => t1_1(2), 					-- checked
+      B => t1_2(0), 					-- checked
+      Cin => '0', 						-- checked
+      S => t2_1(0), 					-- checked
+      Cout => t2_1(1) 				-- checked
     );
     U7: adder_223_1111 port map( -- t_2,2
-      in_0 => v10(7 downto 5),	 	-- checked
-      in_1 => v11(7 downto 5), 		-- checked
-      in_2 => v12(5), 						-- checked
-      out_0(0) => v21(5), 				-- checked
-      out_0(1) => v20(6), 				-- checked
-      out_0(2) => v31(7), 				-- checked
-      out_0(3) => v20(8) 					-- checked
+      in_0(0) => t1_1(3) ,			-- checked
+			in_0(1) => t1_2(2) ,			-- checked
+			in_0(2) => t1_3(2) ,			-- checked
+      in_1(0) => t1_2(1) ,			-- checked
+			in_1(1) => t1_3(1) ,			-- checked
+			in_1(2) => t1_4(1) ,			-- checked
+      in_2 => t1_3(0) ,					-- checked
+			out_0 => t2_2							-- checked
     );
     U8: adder_22_111 port map(  -- t_2,3
-      in_0 => v10(9 downto 8), 	-- checked
-      in_1 => v11(9 downto 8), 	-- checked
-      out_0(0) => v21(8),				-- checked
-      out_0(1) => v31(9) ,			-- checked
-      out_0(2) => v20(10)				-- checked
+      in_0(0) => t1_4(2),				-- checked
+			in_0(1) => t1_5(1), 			-- checked
+      in_1(0) => t1_5(0) ,			-- checked
+			in_1(1) => t1_6(0) , 			-- checked
+      out_0 => t2_3 						-- checked
     );
     U9: full_adder port map(  -- t_2,4
-      A => v10(10), 					-- checked
-      B => v11(10), 					-- checked
+      A => t1_5(2) , 					-- checked
+      B => t1_6(1) , 					-- checked
       Cin => '0', 						-- checked
-      S => v21(10),						-- checked
-      Cout => v20(11)					-- checked
+      S => t2_4(0),						-- checked
+      Cout => t2_4(1)					-- checked
     );
     U10: full_adder port map(  -- t_2,5
-      A => v10(11), 						-- checked
-      B => v11(11), 						-- checked
-      Cin => v12(11), 					-- checked
-      S => v21(11), 						-- checked
-      Cout => v20(12)						-- checked
+      A => t1_5(3), 					-- checked
+      B => t1_6(2) , 					-- checked
+      Cin => V0(11) , 				-- checked
+      S => t2_5(0) , 					-- checked
+      Cout => t2_5(1)					-- checked
     );
     -- level 3
-    U11: full_adder port map(  -- t_3,1
-      A => v20(5) ,							-- checked
-      B => v21(5) ,							-- checked
-      Cin => v22(5) ,						-- checked
-      S => v30(5) ,							-- checked
-      Cout => v30(6)						-- checked
-    );
-    U12: full_adder port map(  -- t_3,2
-      A => v20(6) ,						-- checked
-      B => v21(6) ,						-- checked
-      Cin => '0' ,						-- checked
-      S => v31(6) ,						-- checked
-      Cout => v30(7)					-- checked
-    );
-    U13: full_adder port map(  -- t_3,3
-      A => v20(8) ,						-- checked
-      B => v21(8) ,						-- checked
-      Cin => '0' ,						-- checked
-      S => v30(8) ,						-- checked
-      Cout => v30(9)					-- checked
-    );
-    U14: adder_22_111 port map(  -- t_3,4
-      in_0 => v20(11 downto 10) ,	-- checked
-      in_1 => v21(11 downto 10) ,	-- checked
-      out_0 => v30(12 downto 10)	-- checked
-    );
-    U15: full_adder port map(  -- t_3,5
-      A => v20(12) ,					-- checked
-      B => v21(12) ,					-- checked
-      Cin => '0' ,						-- checked
-      S => v31(12) ,					-- checked
-      Cout => v30(13)					-- checked
-    );
+    U11: full_adder port map( -- t_3,1
+			A => t2_1(1) ,
+			B => t2_2(0) ,
+			Cin => aux ,
+			S => t3_1(0) ,
+			Cout => t3_1(1)
+		);
+		U12: full_adder port map(	-- t_3,2
+			A => t2_2(1) ,
+			B => t1_4(0) ,
+			Cin => '0' ,
+			S => t3_2(0) ,
+			Cout => t3_2(1)
+		);
+		U13: full_adder port map(	-- t_3,3
+			A => t2_2(3) ,
+			B => t2_3(0) ,
+			Cin => '0' ,
+			S => t3_3(0) ,
+			Cout => t3_3(1)
+		);
+		U14: adder_22_111 port map(	--t_3,4
+			in_0(0) => t2_3(2),
+			in_0(1) => t2_4(1),
+			in_1(0) => t2_4(0) ,
+			in_1(1) => t2_5(0),
+			out_0 => t3_4
+		);
+		U15: full_adder port map(	-- t_3,5
+			A => t2_5(1) ,
+			B => aux0 ,
+			Cin => '0' ,
+			S => t3_5(0) ,
+			Cout => t3_5(1)
+		);
 
-		S0 <= v30;
-		S1 <= v31;
+		--	  	1				3				2				1					2				1					2									2
+		S0 <= t3_5(1) & t3_4(2) & t3_4(1) & t3_4(0) & t3_3(1) & t3_3(0) & t3_2(1) & t3_1(1) & t3_1(0) & t2_1(0) & t1_1(1) & t1_1(0) & "00";
+		S1 <= '0' & t3_5(0) & "00" & t2_3(1) & '0' & t2_2(2) & t3_2(0) & "000000";
 
 end Structural;
