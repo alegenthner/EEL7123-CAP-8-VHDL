@@ -1,9 +1,0 @@
-C:/VHDL/EEL7123_CAP_8_VHDL/compressor.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\VHDL\EEL7123_CAP_8_VHDL\compressor.vhd}
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity compressor
--- Compiling architecture Structural of compressor
-
-} {} {}}
