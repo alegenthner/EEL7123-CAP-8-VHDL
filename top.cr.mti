@@ -1,0 +1,81 @@
+C:/VHDL/EEL7123-CAP-8-VHDL/adder_55_1111.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/adder_55_1111.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_55_1111
+-- Compiling architecture Structural of adder_55_1111
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/adder_7_111.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/adder_7_111.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_7_111
+-- Compiling architecture Structural of adder_7_111
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/compressor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/compressor.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity compressor
+-- Compiling architecture Structural of compressor
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/adder_223_1111.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/adder_223_1111.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_223_1111
+-- Compiling architecture Structural of adder_223_1111
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/adder_22_111.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/adder_22_111.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_22_111
+-- Compiling architecture Structural of adder_22_111
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/adder_6.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/adder_6.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_6
+-- Compiling architecture Structural of adder_6
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/info_array.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/info_array.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity info_array
+-- Compiling architecture Structural of info_array
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/half_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/half_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity half_adder
+-- Compiling architecture Structural of half_adder
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/full_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/full_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture Structural of full_adder
+
+} {} {}} C:/VHDL/EEL7123-CAP-8-VHDL/top.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/VHDL/EEL7123-CAP-8-VHDL/top.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity top
+-- Compiling architecture Structural of top
+
+} {} {}}
