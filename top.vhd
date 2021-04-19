@@ -29,10 +29,10 @@ architecture Structural of top is
 		 );
 	 end component;
 
-	 component adder_8 is
+	 component adder_6 is
 		 port(
-			operand_a, operand_b: in std_logic_vector(7 downto 0);
-			result: out std_logic_vector(8 downto 0)
+			operand_a, operand_b: in std_logic_vector(5 downto 0);
+			result: out std_logic_vector(6 downto 0)
 			);
 		end component;
 
@@ -44,10 +44,10 @@ architecture Structural of top is
 		U1: compressor port map(sigV0, sigV1, sigV2, sigV3, sigV4, sigV5, sigV6, sigV7,
 														comS0, comS1
 		);
-		U2: adder_8 port map(comS0(13 downto 6), comS1(13 downto 6),
-												S(14 downto 6)
+		U2: adder_6 port map(comS0(13 downto 8), comS1(13 downto 8),
+												S(14 downto 8)
 		);
 
-		S(5 downto 0) <= comS0(5 downto 0);
+		S(7 downto 0) <= comS0(7 downto 0);
 
 end Structural;

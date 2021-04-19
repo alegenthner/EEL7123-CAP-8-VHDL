@@ -15,9 +15,9 @@ architecture Structural of compressor is
   -- signal v30,v31: std_logic_vector(13 downto 0) := "00000000000000";
 
 	-- 4 bit signals
-	signal t1_1, t1_5, t3_1: std_logic_vector(3 downto 0);
+	signal t1_1, t1_5, t2_2, t3_1: std_logic_vector(3 downto 0);
 	-- 3 bit signals
-	signal t1_2, t1_3, t1_4, t1_6, t2_5, t2_6: std_logic_vector(2 downto 0);
+	signal t1_2, t1_3, t1_4, t2_5, t2_6: std_logic_vector(2 downto 0);
 	-- 2 bit signals
 	signal t2_1, t2_2, t2_3, t2_4, t3_2, t3_3, t3_4: std_logic_vector(1 downto 0);
 	-- auxiliar signal
@@ -201,7 +201,7 @@ architecture Structural of compressor is
 		);
 
 
-		S0 <= t3_4(1) & t3_4(0) & t3_3(1) & t3_3(0) & t2_5(1) & t3_1(3) & t3_1(2) & t3_1(1) & t3_1(0) & t2_1(0) & t1_1(1) & t1_1(0) & "00";
+		S0 <= t3_4(1) & t3_4(0) & t3_3(1) & t3_3(0) & '0' & t3_1(3) & t3_1(2) & t3_1(1) & t3_1(0) & t2_1(0) & t1_1(1) & t1_1(0) & "00";
 		S1 <= "00" & t2_6(1) & '0' & t3_2(1) & t3_2(0) & "00000000";
 
 end Structural;

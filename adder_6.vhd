@@ -1,17 +1,17 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
-entity adder_8 is
+entity adder_6 is
 	port(
-    operand_a, operand_b: in std_logic_vector(7 downto 0);
-    result: out std_logic_vector(8 downto 0)
+    operand_a, operand_b: in std_logic_vector(5 downto 0);
+    result: out std_logic_vector(6 downto 0)
 	 );
-end adder_8;
+end adder_6;
 
-architecture Structural of adder_8 is
+architecture Structural of adder_6 is
 
   signal aux0, aux1, aux2, aux3: std_logic;
-  signal aux4, aux5, aux6: std_logic;
+  signal aux4: std_logic;
 
   component full_adder is
     port(
@@ -39,8 +39,5 @@ architecture Structural of adder_8 is
     U2: full_adder port map(A => operand_a(2), B=> operand_b(2), Cin=> aux1, S=> result(2), Cout=> aux2);
     U3: full_adder port map(A => operand_a(3), B=> operand_b(3), Cin=> aux2, S=> result(3), Cout=> aux3);
     U4: full_adder port map(A => operand_a(4), B=> operand_b(4), Cin=> aux3, S=> result(4), Cout=> aux4);
-    U5: full_adder port map(A => operand_a(5), B=> operand_b(5), Cin=> aux4, S=> result(5), Cout=> aux5);
-    U6: full_adder port map(A => operand_a(6), B=> operand_b(6), Cin=> aux5, S=> result(6), Cout=> aux6);
-    U7: full_adder port map(A => operand_a(7), B=> operand_b(7), Cin=> aux6, S=> result(7), Cout=> result(8));
-
+		U5: full_adder port map(A => operand_a(5), B=> operand_b(5), Cin=> aux4, S=> result(5), Cout=> result(6));
 end Structural;

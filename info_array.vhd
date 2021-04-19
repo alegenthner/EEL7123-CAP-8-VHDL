@@ -16,9 +16,9 @@ architecture Structural of info_array is
     V1 <= "00" & D(1 downto 0) & B(3 downto 1) & A(0) & B(2 downto 0) & "00";
     V2 <= "0000" & C(3 downto 2) & B(1) & B(3) &B(1 downto 0) & C(0) & "00";
     V3 <= "0000" & C(1 downto 0) & C(1) & B(2) & C(2 downto 1) & D(0) & "00";
-    V4 <= "0000" & D(3 downto 2) & D(3) & B(0) & D(2 downto 1) & "100";
-    V5 <= "000000" & D(1) & C(3) & D(3) & "0000";
+    V4 <= "0000" & D(3 downto 1) & B(0) & D(2 downto 1) & "100";
+    V5 <= "0000000" & C(3) & D(3) & "0000";
     V6 <= "000000" & D(0) & C(0) & D(3) & "0000";
     V7 <= "0000000" & not(D(0)) & "00000";
-    
+
 end Structural;
