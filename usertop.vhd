@@ -32,12 +32,13 @@ end usertop;
 
 architecture Structural of usertop is
 
-	signal inA, inB, inC, inD: in std_logic_vector(3 downto 0);
+	signal inA, inB, inC, inD: std_logic_vector(3 downto 0);
 	signal sigV0, sigV1, sigV2, sigV3: std_logic_vector(12 downto 0);
 	signal sigV4, sigV5, sigV6, sigV7: std_logic_vector(12 downto 0);
 	signal comS0, comS1: std_logic_vector(13 downto 0);
 	-- signals for 7 segment display
 	signal signalResult: std_logic_vector(14 downto 0);
+	signal aux: std_logic_vector(3 downto 0);
 
   component info_array is
 		port(
@@ -99,7 +100,9 @@ architecture Structural of usertop is
 														f => HEX2
 		);
 
-		U6: decod7seg port map(	c => '0' & signalResult(14 downto 12),
+		aux <= '0' & signalResult(14 downto 12);
+
+		U6: decod7seg port map(	c => aux,
 														f => HEX3
 		);
 end Structural;
